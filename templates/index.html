@@ -22,9 +22,9 @@
                 <td>{{ task.content }}</td>
                 <td>{{ task.date_created.date() }}</td>
                 <td>
-                    <a href="/delete/{{task.id}}">Delete</a>
+                    <button><a href="/delete/{{task.id}}">Delete</a></button>
                     <br>
-                    <a href="/update/{{task.id}}">Update</a>
+                    <button><a href="/update/{{task.id}}">Update</a></button>
                 </td>
             </tr>
         {% endfor %}
